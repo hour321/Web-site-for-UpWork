@@ -1,3 +1,18 @@
+/**
+ * FloatingElements Component
+ * 
+ * @description A background component that creates floating animated elements
+ * @author hour321 (gaudy.hour@gmail.com)
+ * @version 1.0.0
+ * @created 2025-01-07
+ * 
+ * @features
+ *   - Randomly positioned floating elements
+ *   - Continuous floating animations
+ *   - Multiple sizes and opacity variations
+ *   - Geometric shapes with gradients
+ */
+
 import { motion } from 'framer-motion';
 
 export const FloatingElements = () => {

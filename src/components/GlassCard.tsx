@@ -1,3 +1,18 @@
+/**
+ * GlassCard Component
+ * 
+ * @description A glassmorphism-styled card component with backdrop blur and hover effects
+ * @author hour321 (gaudy.hour@gmail.com)
+ * @version 1.0.0
+ * @created 2025-01-07
+ * 
+ * @features
+ *   - Glassmorphism design with backdrop blur
+ *   - Hover animations and scaling
+ *   - Customizable styling and behavior
+ *   - Gradient overlay effects
+ */
+
 import { motion } from 'framer-motion';
 import { ReactNode } from 'react';
 

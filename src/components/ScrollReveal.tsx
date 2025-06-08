@@ -1,3 +1,18 @@
+/**
+ * ScrollReveal Component
+ * 
+ * @description A component that reveals content with animations when scrolling into view
+ * @author hour321 (gaudy.hour@gmail.com)
+ * @version 1.0.0
+ * @created 2025-01-07
+ * 
+ * @features
+ *   - Multiple animation directions (left, right, up, down)
+ *   - Customizable delay timing
+ *   - Intersection Observer integration
+ *   - Smooth scroll-triggered animations
+ */
+
 import { motion } from 'framer-motion';
 import { ReactNode, useEffect, useRef, useState } from 'react';
 

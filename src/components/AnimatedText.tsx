@@ -1,3 +1,18 @@
+/**
+ * AnimatedText Component
+ * 
+ * @description A React component that animates text with staggered word animations
+ * @author hour321 (gaudy.hour@gmail.com)
+ * @version 1.0.0
+ * @created 2025-01-07
+ * 
+ * @features
+ *   - Word-by-word staggered animation
+ *   - Customizable delay timing
+ *   - Smooth easing transitions
+ *   - TypeScript interface support
+ */
+
 import { motion } from 'framer-motion';
 
 interface AnimatedTextProps {

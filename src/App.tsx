@@ -1,3 +1,22 @@
+/**
+ * Modern Web Experience - Future of Digital Design
+ * 
+ * @description A cutting-edge website showcasing modern web design principles
+ *              with advanced animations, glassmorphism effects, and responsive layout
+ * @author hour321 (gaudy.hour@gmail.com)
+ * @version 1.0.0
+ * @created 2025-01-07
+ * @repository https://github.com/hour321/Web-site-for-UpWork
+ * 
+ * @technologies React, TypeScript, Tailwind CSS, Framer Motion, Vite
+ * @features
+ *   - Advanced animations and transitions
+ *   - Glassmorphism design elements
+ *   - Responsive design
+ *   - Modern gradient backgrounds
+ *   - Interactive components
+ */
+
 import { motion } from 'framer-motion';
 import { ScrollReveal } from './components/ScrollReveal';
 import { GlassCard } from './components/GlassCard';
@@ -9,8 +28,68 @@ function App() {
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-purple-900 to-violet-900 text-white overflow-x-hidden">
       <FloatingElements />
       
+      {/* Navigation Header */}
+      <motion.header
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        className="fixed top-0 left-0 right-0 z-50 bg-black/10 backdrop-blur-md border-b border-white/10"
+      >
+        <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center h-16">
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent"
+            >
+              ModernWeb
+            </motion.div>
+            
+            <div className="hidden md:flex space-x-8">
+              <motion.a
+                href="#home"
+                whileHover={{ scale: 1.1 }}
+                className="text-white/80 hover:text-white transition-colors duration-200"
+              >
+                Home
+              </motion.a>
+              <motion.a
+                href="#features"
+                whileHover={{ scale: 1.1 }}
+                className="text-white/80 hover:text-white transition-colors duration-200"
+              >
+                Features
+              </motion.a>
+              <motion.a
+                href="#technology"
+                whileHover={{ scale: 1.1 }}
+                className="text-white/80 hover:text-white transition-colors duration-200"
+              >
+                Technology
+              </motion.a>
+              <motion.a
+                href="#contact"
+                whileHover={{ scale: 1.1 }}
+                className="text-white/80 hover:text-white transition-colors duration-200"
+              >
+                Contact
+              </motion.a>
+            </div>
+            
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="md:hidden p-2 rounded-md text-white/80 hover:text-white"
+            >
+              <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </motion.button>
+          </div>
+        </nav>
+      </motion.header>
+
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center px-4">
+      <section id="home" className="relative h-screen flex items-center justify-center px-4 pt-16">
         <div className="absolute inset-0 bg-gradient-to-r from-purple-600/20 to-pink-600/20" />
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
@@ -65,7 +144,7 @@ function App() {
       </section>
 
       {/* Features Section - Left Animation */}
-      <section className="py-20 px-4">
+      <section id="features" className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <ScrollReveal direction="left" delay={0.2}>
             <h2 className="text-5xl font-bold text-center mb-16 bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
@@ -100,7 +179,7 @@ function App() {
       </section>
 
       {/* Technology Section - Right Animation */}
-      <section className="py-20 px-4 bg-gradient-to-r from-purple-900/50 to-pink-900/50">
+      <section id="technology" className="py-20 px-4 bg-gradient-to-r from-purple-900/50 to-pink-900/50">
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <ScrollReveal direction="left" delay={0.2}>
@@ -203,8 +282,8 @@ function App() {
         </div>
       </section>
 
-      {/* Call to Action Section */}
-      <section className="py-20 px-4 bg-gradient-to-r from-purple-900/80 to-pink-900/80">
+      {/* Contact Section */}
+      <section id="contact" className="py-20 px-4 bg-gradient-to-r from-purple-900/80 to-pink-900/80">
         <div className="max-w-4xl mx-auto text-center">
           <ScrollReveal direction="up" delay={0.2}>
             <h2 className="text-6xl font-bold mb-8 bg-gradient-to-r from-white to-purple-200 bg-clip-text text-transparent">
