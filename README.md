@@ -6,23 +6,37 @@
 
 > Experience the next level of web design with cutting-edge animations, modern UI components, and revolutionary features.
 
+## 🌐 Live Demo
+
+**🚀 [View Live Website](https://prototype-g9e1k7rhl-jovatects-projects.vercel.app)**
+
+Experience all the interactive features and animations in action!
+
 ## 🚀 Features
 
-- **Advanced Animations**: Smooth, professional animations using Framer Motion
-- **Glassmorphism Design**: Modern glass-like UI elements with backdrop filters
-- **Responsive Layout**: Perfect viewing experience across all devices
-- **Modern Gradients**: Stunning gradient backgrounds and text effects
-- **Interactive Components**: Engaging hover effects and micro-interactions
-- **TypeScript**: Full type safety and better development experience
-- **Lightning Fast**: Optimized performance with Vite build tool
+- **🎨 8 Interactive Hover Effects**: 
+  - 3D Flip Card, Particle Explosion, Shape Morphing
+  - Liquid Wave, Glitch Effect, Glassmorphism
+  - Magnetic Hover, 3D Depth Effects
+- **🤖 AI Chat Bot**: Multi-provider AI integration (Hugging Face, OpenAI, Cohere, Gemini)
+- **⚡ Skills & Technologies Page**: Interactive tech showcase
+- **🌊 Advanced Animations**: Smooth, professional animations using Framer Motion
+- **🧊 Glassmorphism Design**: Modern glass-like UI elements with backdrop filters
+- **📱 Responsive Layout**: Perfect viewing experience across all devices
+- **🎭 Modern Gradients**: Stunning gradient backgrounds and text effects
+- **🖱️ Interactive Components**: Engaging hover effects and micro-interactions
+- **📝 TypeScript**: Full type safety and better development experience
+- **⚡ Lightning Fast**: Optimized performance with Vite build tool
 
 ## 🛠️ Technologies Used
 
-- **Frontend Framework**: React 18
+- **Frontend Framework**: React 18 with React Router
 - **Language**: TypeScript
 - **Styling**: Tailwind CSS
 - **Animations**: Framer Motion
+- **AI Integration**: Multiple providers (Hugging Face, OpenAI, Cohere, Gemini)
 - **Build Tool**: Vite
+- **Deployment**: Vercel
 - **Package Manager**: npm
 
 ## 📦 Installation

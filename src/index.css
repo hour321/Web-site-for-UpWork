@@ -47,3 +47,12 @@ body {
 * {
   transition: transform 0.3s ease;
 }
+
+/* 3D Flip Card Styles */
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
