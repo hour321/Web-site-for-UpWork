@@ -13,7 +13,7 @@ interface Message {
   timestamp: Date;
 }
 
-export function NextGenTechPage() {
+export function AIChatBotPage() {
   const [messages, setMessages] = useState<Message[]>([
     {
       id: 1,

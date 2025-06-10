@@ -1,11 +1,11 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { ScrollReveal } from './ScrollReveal';
-import { GlassCard } from './GlassCard';
-import { AnimatedText } from './AnimatedText';
-import { FloatingElements } from './FloatingElements';
+import { ScrollReveal } from '../components/ScrollReveal';
+import { GlassCard } from '../components/GlassCard';
+import { AnimatedText } from '../components/AnimatedText';
+import { FloatingElements } from '../components/FloatingElements';
 
-export function HomePage() {
+export function MainHomePage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-purple-900 to-violet-900 text-white overflow-x-hidden">
       <FloatingElements />
@@ -136,7 +136,7 @@ export function HomePage() {
           
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <ScrollReveal direction="left" delay={0.4}>
-              <Link to="/lightning-fast">
+              <Link to="/skills-technologies">
                 <motion.div
                   whileHover={{ scale: 1.02, y: -5 }}
                   whileTap={{ scale: 0.98 }}
@@ -176,7 +176,7 @@ export function HomePage() {
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <ScrollReveal direction="left" delay={0.2}>
-              <Link to="/next-gen-tech">
+              <Link to="/ai-chat-bot">
                 <motion.div
                   whileHover={{ scale: 1.02, y: -5 }}
                   whileTap={{ scale: 0.98 }}
@@ -346,7 +346,7 @@ export function HomePage() {
                       <span className="text-lg">🆓 完全無料で利用可能</span>
                     </div>
                     <div className="text-center mt-6">
-                      <Link to="/next-gen-tech">
+                      <Link to="/ai-chat-bot">
                         <motion.button
                           whileHover={{ scale: 1.05 }}
                           whileTap={{ scale: 0.95 }}

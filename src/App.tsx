@@ -18,16 +18,16 @@
  */
 
 import { Routes, Route } from 'react-router-dom';
-import { HomePage } from './components/HomePage';
-import { LightningFastPage } from './pages/LightningFastPage';
-import { NextGenTechPage } from './pages/NextGenTechPage';
+import { MainHomePage } from './pages/Home.Page';
+import { SkillsTechnologiesPage } from './pages/Skills.Technologies';
+import { AIChatBotPage } from './pages/AI.Chat.Bot';
 
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<HomePage />} />
-      <Route path="/lightning-fast" element={<LightningFastPage />} />
-      <Route path="/next-gen-tech" element={<NextGenTechPage />} />
+      <Route path="/" element={<MainHomePage />} />
+      <Route path="/skills-technologies" element={<SkillsTechnologiesPage />} />
+      <Route path="/ai-chat-bot" element={<AIChatBotPage />} />
     </Routes>
   );
 }

@@ -4,7 +4,7 @@ import { GlassCard } from '../components/GlassCard';
 import { ScrollReveal } from '../components/ScrollReveal';
 import { FloatingElements } from '../components/FloatingElements';
 
-export function LightningFastPage() {
+export function SkillsTechnologiesPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-purple-900 to-violet-900 text-white overflow-x-hidden">
       <FloatingElements />
@@ -201,6 +201,179 @@ export function LightningFastPage() {
         </div>
       </section>
 
+      {/* AI Integration Skills */}
+      <section className="py-20 px-4 bg-gradient-to-r from-emerald-900/30 to-teal-900/30">
+        <div className="max-w-6xl mx-auto">
+          <ScrollReveal direction="up" delay={0.2}>
+            <h2 className="text-5xl font-bold text-center mb-16 bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">
+              🤖 AI Integration Expertise
+            </h2>
+          </ScrollReveal>
+          
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <ScrollReveal direction="left" delay={0.4}>
+              <div>
+                <GlassCard>
+                  <h3 className="text-2xl font-bold mb-6 text-emerald-300">AI Technologies & APIs</h3>
+                  <div className="space-y-4">
+                    <div className="flex items-center space-x-4">
+                      <div className="w-3 h-3 bg-emerald-400 rounded-full animate-pulse" />
+                      <span className="text-lg">🤗 Hugging Face - Free AI Models</span>
+                    </div>
+                    <div className="flex items-center space-x-4">
+                      <div className="w-3 h-3 bg-blue-400 rounded-full animate-pulse" />
+                      <span className="text-lg">🧠 OpenAI GPT - Advanced Conversations</span>
+                    </div>
+                    <div className="flex items-center space-x-4">
+                      <div className="w-3 h-3 bg-purple-400 rounded-full animate-pulse" />
+                      <span className="text-lg">🔮 Google Gemini - Multimodal AI</span>
+                    </div>
+                    <div className="flex items-center space-x-4">
+                      <div className="w-3 h-3 bg-pink-400 rounded-full animate-pulse" />
+                      <span className="text-lg">⚡ Cohere - Language Understanding</span>
+                    </div>
+                    <div className="flex items-center space-x-4">
+                      <div className="w-3 h-3 bg-cyan-400 rounded-full animate-pulse" />
+                      <span className="text-lg">🎯 Context-Aware Responses</span>
+                    </div>
+                  </div>
+                </GlassCard>
+              </div>
+            </ScrollReveal>
+            
+            <ScrollReveal direction="right" delay={0.6}>
+              <div className="relative">
+                <motion.div
+                  className="w-full h-80 bg-gradient-to-br from-emerald-500/30 to-teal-500/30 rounded-3xl flex items-center justify-center"
+                  animate={{ 
+                    boxShadow: [
+                      '0 0 20px rgba(16, 185, 129, 0.3)',
+                      '0 0 40px rgba(16, 185, 129, 0.6)',
+                      '0 0 20px rgba(16, 185, 129, 0.3)'
+                    ],
+                  }}
+                  transition={{ duration: 3, repeat: Infinity }}
+                >
+                  <motion.div
+                    className="text-8xl"
+                    animate={{ 
+                      scale: [1, 1.2, 1],
+                      rotate: [0, 360, 0]
+                    }}
+                    transition={{ duration: 4, repeat: Infinity }}
+                  >
+                    🤖
+                  </motion.div>
+                </motion.div>
+                
+                {/* AI service indicators */}
+                {['🤗', '🧠', '🔮', '⚡'].map((emoji, i) => (
+                  <motion.div
+                    key={i}
+                    className="absolute text-3xl"
+                    style={{
+                      left: `${25 + i * 15}%`,
+                      top: `${20 + (i % 2) * 50}%`,
+                    }}
+                    animate={{
+                      y: [0, -30, 0],
+                      opacity: [0.5, 1, 0.5],
+                      scale: [1, 1.3, 1],
+                    }}
+                    transition={{
+                      duration: 2,
+                      repeat: Infinity,
+                      delay: i * 0.5,
+                    }}
+                  >
+                    {emoji}
+                  </motion.div>
+                ))}
+              </div>
+            </ScrollReveal>
+          </div>
+        </div>
+      </section>
+
+      {/* Interactive Hover Effects */}
+      <section className="py-20 px-4">
+        <div className="max-w-6xl mx-auto">
+          <ScrollReveal direction="up" delay={0.2}>
+            <h2 className="text-5xl font-bold text-center mb-16 bg-gradient-to-r from-pink-400 to-rose-400 bg-clip-text text-transparent">
+              🎨 Interactive Hover Effects
+            </h2>
+          </ScrollReveal>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+            <ScrollReveal direction="left" delay={0.4}>
+              <GlassCard className="text-center h-full">
+                <div className="text-4xl mb-4">🚀</div>
+                <h3 className="text-lg font-bold text-pink-300 mb-2">3D Flip Card</h3>
+                <p className="text-gray-300 text-sm">3D rotation with backface visibility</p>
+              </GlassCard>
+            </ScrollReveal>
+            
+            <ScrollReveal direction="up" delay={0.5}>
+              <GlassCard className="text-center h-full">
+                <div className="text-4xl mb-4">💥</div>
+                <h3 className="text-lg font-bold text-pink-300 mb-2">Particle Explosion</h3>
+                <p className="text-gray-300 text-sm">Dynamic particle burst animations</p>
+              </GlassCard>
+            </ScrollReveal>
+            
+            <ScrollReveal direction="up" delay={0.6}>
+              <GlassCard className="text-center h-full">
+                <div className="text-4xl mb-4">🔶</div>
+                <h3 className="text-lg font-bold text-pink-300 mb-2">Shape Morphing</h3>
+                <p className="text-gray-300 text-sm">Complex multi-element transformations</p>
+              </GlassCard>
+            </ScrollReveal>
+            
+            <ScrollReveal direction="right" delay={0.7}>
+              <GlassCard className="text-center h-full">
+                <div className="text-4xl mb-4">🌊</div>
+                <h3 className="text-lg font-bold text-pink-300 mb-2">Liquid Wave</h3>
+                <p className="text-gray-300 text-sm">Flowing wave with clip-path morphing</p>
+              </GlassCard>
+            </ScrollReveal>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <ScrollReveal direction="left" delay={0.8}>
+              <GlassCard className="text-center h-full">
+                <div className="text-4xl mb-4">⚡</div>
+                <h3 className="text-lg font-bold text-rose-300 mb-2">Glitch Effect</h3>
+                <p className="text-gray-300 text-sm">Digital chaos with RGB separation</p>
+              </GlassCard>
+            </ScrollReveal>
+            
+            <ScrollReveal direction="up" delay={0.9}>
+              <GlassCard className="text-center h-full">
+                <div className="text-4xl mb-4">🧊</div>
+                <h3 className="text-lg font-bold text-rose-300 mb-2">Glassmorphism</h3>
+                <p className="text-gray-300 text-sm">Frosted glass with backdrop blur</p>
+              </GlassCard>
+            </ScrollReveal>
+            
+            <ScrollReveal direction="up" delay={1.0}>
+              <GlassCard className="text-center h-full">
+                <div className="text-4xl mb-4">🧲</div>
+                <h3 className="text-lg font-bold text-rose-300 mb-2">Magnetic Hover</h3>
+                <p className="text-gray-300 text-sm">Mouse-tracking 3D attraction</p>
+              </GlassCard>
+            </ScrollReveal>
+            
+            <ScrollReveal direction="right" delay={1.1}>
+              <GlassCard className="text-center h-full">
+                <div className="text-4xl mb-4">🌀</div>
+                <h3 className="text-lg font-bold text-rose-300 mb-2">3D Depth</h3>
+                <p className="text-gray-300 text-sm">Multi-layered depth illusion</p>
+              </GlassCard>
+            </ScrollReveal>
+          </div>
+        </div>
+      </section>
+
       {/* Development Skills */}
       <section className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
@@ -255,7 +428,7 @@ export function LightningFastPage() {
             </h2>
           </ScrollReveal>
           
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
             <ScrollReveal direction="left" delay={0.4}>
               <GlassCard>
                 <div className="text-4xl mb-4">🔍</div>
@@ -280,6 +453,47 @@ export function LightningFastPage() {
               </GlassCard>
             </ScrollReveal>
           </div>
+
+          {/* Deployment & Production */}
+          <ScrollReveal direction="up" delay={1.0}>
+            <h3 className="text-3xl font-bold text-center mb-8 bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">
+              🌐 Deployment & Production
+            </h3>
+          </ScrollReveal>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <ScrollReveal direction="left" delay={1.2}>
+              <GlassCard className="text-center h-full">
+                <div className="text-4xl mb-4">▲</div>
+                <h3 className="text-lg font-bold text-indigo-300 mb-2">Vercel</h3>
+                <p className="text-gray-300 text-sm">Auto-deployment with GitHub integration</p>
+              </GlassCard>
+            </ScrollReveal>
+            
+            <ScrollReveal direction="up" delay={1.3}>
+              <GlassCard className="text-center h-full">
+                <div className="text-4xl mb-4">🔄</div>
+                <h3 className="text-lg font-bold text-indigo-300 mb-2">CI/CD</h3>
+                <p className="text-gray-300 text-sm">Continuous integration and deployment</p>
+              </GlassCard>
+            </ScrollReveal>
+            
+            <ScrollReveal direction="up" delay={1.4}>
+              <GlassCard className="text-center h-full">
+                <div className="text-4xl mb-4">🌍</div>
+                <h3 className="text-lg font-bold text-indigo-300 mb-2">Global CDN</h3>
+                <p className="text-gray-300 text-sm">Worldwide content delivery network</p>
+              </GlassCard>
+            </ScrollReveal>
+            
+            <ScrollReveal direction="right" delay={1.5}>
+              <GlassCard className="text-center h-full">
+                <div className="text-4xl mb-4">🔒</div>
+                <h3 className="text-lg font-bold text-indigo-300 mb-2">HTTPS</h3>
+                <p className="text-gray-300 text-sm">Automatic SSL certificates</p>
+              </GlassCard>
+            </ScrollReveal>
+          </div>
         </div>
       </section>
 
@@ -301,6 +515,15 @@ export function LightningFastPage() {
           
           <ScrollReveal direction="up" delay={0.6}>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link to="/ai-chat-bot">
+                <motion.button
+                  whileHover={{ scale: 1.05, boxShadow: "0 20px 40px rgba(16, 185, 129, 0.3)" }}
+                  whileTap={{ scale: 0.95 }}
+                  className="px-10 py-4 bg-gradient-to-r from-emerald-600 to-teal-600 rounded-full text-white font-bold text-lg shadow-xl"
+                >
+                  🤖 Try AI Chat Bot
+                </motion.button>
+              </Link>
               <motion.button
                 whileHover={{ scale: 1.05, boxShadow: "0 20px 40px rgba(34, 211, 238, 0.3)" }}
                 whileTap={{ scale: 0.95 }}
